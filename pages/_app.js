@@ -1,8 +1,13 @@
-import '../styles/globals.css'
 
+// import  { Container } from 'next/app';
+import Context from '../context/index';
 function MyApp({ Component, pageProps }) {
-  // console.log(pageProps);
-  return <Component {...pageProps} />
+
+  return  <Context>
+  <Component {...pageProps} />
+
+  </Context>
+ 
 }
 
-export default MyApp
+export default MyApp;
